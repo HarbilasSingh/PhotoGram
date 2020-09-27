@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "566397845210",
+    "firebase_url": "https://photogram-60975.firebaseio.com",
+    "project_id": "photogram-60975",
+    "storage_bucket": "photogram-60975.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:566397845210:android:437b7d726309b19fed2fe3",
+        "android_client_info": {
+          "package_name": "com.example.socialnetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "566397845210-tnlgp01i89tjvavkeo6koc97ra8hf3gv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.socialnetwork",
+            "certificate_hash": "1efbd53fb45c7b43ffe948ff0f4227f3634fef9c"
+          }
+        },
+        {
+          "client_id": "566397845210-je96dqqf3o2gt94i0k8da59pvtbitj0f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAjtsuYmCQLA28MF6rRfgquKNBESalV1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "566397845210-je96dqqf3o2gt94i0k8da59pvtbitj0f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyMessagesActivity"
+    android:background="@drawable/greenbackground">
+
+    <include
+        android:id="@+id/my_messages_layout"
+        layout="@layout/app_bar_layout"></include>
+
+    <TextView
+        android:id="@+id/my_messages_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:textSize="26sp"
+        android:layout_below="@+id/my_messages_layout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/my_messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_messages_title"
+        android:padding="10dp"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".ChatActivity">
+
+    <include layout="@layout/my_custom_toolbar"
+        android:id="@+id/chat_bar_layout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messages_list_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chat_bar_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_above="@+id/myLinearLayout"/>
+
+    <LinearLayout
+        android:id="@+id/myLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/chat_activity_input_bar"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageButton
+            android:id="@+id/select_image_file_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_camera_alt_black_24dp" />
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:hint="Message..."
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/attach_file_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/attach"
+            android:scaleType="centerInside"/>
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/send_msg_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/whatsapp_send_sign"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/myLinearLayout"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="20dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_send_black_24dp" />
+
+</RelativeLayout>

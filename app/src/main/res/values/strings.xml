@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Social Network</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="facebook_app_id">678713122733362</string>
+    <string name="fb_login_protocol_scheme">fb678713122733362</string>
+
+</resources>
